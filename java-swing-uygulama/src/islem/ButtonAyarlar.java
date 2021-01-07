@@ -6,22 +6,22 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class ButtonAyarlar {
-    
-   private static Color originalBgColor,originalFgColor; 
+
+   private static Color originalBgColor,originalFgColor; //buton orjinal arkaplan rengi ve yazı rengi aldık.
   
-  public static void setBgFg(JButton button,Color bgColor,Color fgColor){
-    originalBgColor=button.getBackground();
-    originalFgColor=button.getForeground();
-    button.setBackground(bgColor);
-    button.setForeground(fgColor);
+  public static void setBgFg(JButton button,Color bgColor,Color fgColor){ //methodta buton,arkaplan rengi,yazı rengi alacak
+    originalBgColor=button.getBackground(); //ilk önce orjinal arkaplanrengini saklayak bir altaki methodta kullanılacakdir.
+    originalFgColor=button.getForeground();  //ilk önce orjinal yazı rengi saklayak bir altaki methodta kullanılacakdir.
+    button.setBackground(bgColor); //yeni arkaplan rengi verek
+    button.setForeground(fgColor);  //yeni yazı rengi verek
   } 
   
-  public static void setOriginalBgFg(JButton button){
-      button.setBackground(originalBgColor);
-      button.setForeground(originalFgColor);
+  public static void setOriginalBgFg(JButton button){ //orijinal buton arkaplan rengi  ve yazı rengini verme
+      button.setBackground(originalBgColor); //orjinal arkaplanrengi verildi.
+      button.setForeground(originalFgColor);  //orjinal yazı rengi verildi.
   } 
-  public static void setVisible(JFrame oldFrame,JFrame newFrame){
-        oldFrame.setVisible(false);
-        newFrame.setVisible(true);
+  public static void setVisible(JFrame oldFrame,JFrame newFrame){ //uygulama arasıda geçiş yapma
+        oldFrame.setVisible(false); //uygulamayaı kapatma
+        newFrame.setVisible(true);  //yeni uygulamayı açma
     }  
 }
