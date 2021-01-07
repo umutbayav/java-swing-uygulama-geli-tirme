@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 
 public class ButtonAyarlar {
     
-   private static Color originalBgColor,originalFgColor;
+   private static Color originalBgColor,originalFgColor; 
   
   public static void setBgFg(JButton button,Color bgColor,Color fgColor){
     originalBgColor=button.getBackground();
