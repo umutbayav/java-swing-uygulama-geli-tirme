@@ -1,1 +1,1 @@
-# java-swing-uygulama-geli-tirme
+# java-swing-uygulama-geliştirme
